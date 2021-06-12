@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.EditBookFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_book"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/buku"
+        style="@style/title"/>
+
+
+    <EditText
+        android:id="@+id/judul_buku"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:hint="@string/judul_buku"
+        android:inputType="text"
+        style="@style/edit_text"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/id_Pengarang"
+        android:layout_below="@+id/judul_buku"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="@string/id_pengarang"
+        style="@style/edit_text"/>
+
+
+    <EditText
+        android:id="@+id/jumlah_halaman"
+        android:layout_below="@+id/id_Pengarang"
+        android:paddingStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="@string/jumlah_halaman"
+        style="@style/edit_text"/>
+
+    <EditText
+        android:id="@+id/nomor_isbn"
+        android:layout_below="@+id/jumlah_halaman"
+        android:paddingStart="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:hint="@string/nomor_isbn"
+        style="@style/edit_text"/>
+
+    <EditText
+        android:id="@+id/tahun_terbit"
+        android:layout_below="@+id/nomor_isbn"
+        android:paddingStart="10dp"
+        android:layout_marginTop="10dp"
+        android:maxLength="4"
+        android:inputType="date"
+        android:hint="@string/tahun_terbit"
+        style="@style/edit_text"/>
+
+
+    <Button
+        android:id="@+id/btn_update"
+        android:text="@string/update"
+        android:layout_below="@+id/tahun_terbit"
+        style="@style/button"/>
+
+</RelativeLayout>

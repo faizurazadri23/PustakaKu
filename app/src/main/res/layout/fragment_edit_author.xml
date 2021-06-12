@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.EditAuthorFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_author"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/pengarang"
+        style="@style/title"/>
+
+
+    <EditText
+        android:id="@+id/nama_pengarang"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:hint="@string/nama_pengarang"
+        android:inputType="text"
+        style="@style/edit_text"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_below="@+id/nama_pengarang"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        style="@style/edit_text"/>
+
+
+    <EditText
+        android:id="@+id/notelpn"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:hint="@string/no_telepon"
+        style="@style/edit_text"/>
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_below="@+id/notelpn"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:inputType="text"
+        android:hint="@string/alamat"
+        style="@style/edit_text"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:text="@string/update"
+        android:layout_below="@+id/alamat"
+        style="@style/button"/>
+
+</RelativeLayout>

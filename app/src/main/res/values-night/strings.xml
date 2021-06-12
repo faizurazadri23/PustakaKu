@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pustakaku">PUSTAKAKU</string>
+    <string name="buku">Buku</string>
+    <string name="pengarang">Pengarang</string>
+    <string name="data_pengarang">DATA PENGARANG</string>
+    <string name="data_book">DATA BOOK</string>
+    <string name="judul_buku">Judul Buku</string>
+    <string name="nama_pengarang">Nama Pengarang</string>
+    <string name="tahun_terbit">Tahun Terbit</string>
+    <string name="email">Email</string>
+    <string name="alamat">Alamat</string>
+    <string name="id_pengarang">ID Pengarang</string>
+    <string name="no_telepon">No Telepon</string>
+    <string name="submit">SUBMIT</string>
+    <string name="id_buku">ID Buku</string>
+    <string name="jumlah_halaman">Jumlah Halaman</string>
+    <string name="nomor_isbn">Nomor ISBN</string>
+    <string name="delete">DELETE</string>
+    <string name="ubah_data">Ubah Data</string>
+    <string name="update">UPDATE</string>
+</resources>
